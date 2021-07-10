@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+      <title>интукод</title>
+    </head>
+    <body>
+      <div id="main">
+          <ul id="list">
+              <li>html</li>
+              <li>css</li>
+          </ul>
+      </div>
+      <div id="copyright">(c) INTOCODE</div>
+      <script>
+      const dmt = () => {
+        const body = document.body
+        const h1 = document.createElement("h1")
+        h1.textContent = "Работа с DOM"
+        body.prepend(h1)
+      }
+      dmt();
+
+      // Task 2
+      const main = () => {
+        const main2 = document.getElementById("main");
+        const a = document.createElement("a");
+        a.textContent = "статья о DOM"
+        a.href = "https://learn.javascript.ru/dom-nodes"
+        main2.append(a)
+      }
+      main();
+
+  
+      //Task 3 
+    const bc = (colorName) => {
+       document.body.style.background = colorName
+      }
+      bc("green");
+
+
+
+       //Task 4
+       const f = (text) => {
+        const list = document.getElementById("list");
+        const li = document.createElement("li")
+        li.textContent = text 
+        list.append(li)
+      }
+      f("js");
+
+      //Task 5
+     const del = () => {
+      const rem = document.getElementById("copyright")
+       rem.remove()
+
+      }
+      del();
+      </script>
+    </body>
+    </html>
+
+
+    
